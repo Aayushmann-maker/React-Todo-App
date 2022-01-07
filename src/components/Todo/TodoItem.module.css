@@ -1,0 +1,40 @@
+li {
+  list-style: none;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
+  padding: 1rem;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+.todo-item:first-child {
+  margin-top: 1rem;
+}
+
+.todo-item:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 1.8rem;
+  flex-grow: 1;
+}
+
+.completebtn {
+  background-color: seagreen;
+  color: white;
+}
+
+.deletebtn {
+  background-color: tomato;
+  color: white;
+}
+
+.completed {
+  text-decoration: line-through;
+}

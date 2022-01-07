@@ -1,0 +1,57 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.6rem;
+  background-image: linear-gradient(
+    to right top,
+    #d16ba5,
+    #c777b9,
+    #ba83ca,
+    #aa8fd8,
+    #9a9ae1,
+    #8aa7ec,
+    #79b3f4,
+    #69bff8,
+    #52cffe,
+    #41dfff,
+    #46eefa,
+    #5ffbf1
+  );
+  min-height: 100vh;
+}
+
+.app {
+  width: 90%;
+  padding: 3rem 6rem;
+  max-width: 77rem;
+  margin: 3rem auto;
+  background-color: rgba(255, 255, 255, 0.705);
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+.formfilter {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+@media (max-width: 37.5em) {
+  .app {
+    padding: 1.5rem 3rem;
+  }
+  .formfilter {
+    flex-direction: column;
+  }
+}
